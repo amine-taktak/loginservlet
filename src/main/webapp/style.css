@@ -1,0 +1,25 @@
+body
+{
+    background-color: gray;
+}
+
+h2{
+    text-align: center;
+    color: black;
+    padding: 5px;
+    margin:5px
+}
+
+div.login{
+     width: 250px;
+     margin: auto;
+     padding: 10px;
+     background: blue;
+     border: 5px solid black;
+}
+
+div.loginBtn {
+      margin: 5px auto 5px auto;
+      border: none;
+      padding-left: 100px;
+}
