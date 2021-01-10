@@ -1,0 +1,16 @@
+p {
+    text-family: sans-serif;
+    text-size:20px;
+    text-align: right;
+}
+
+h2 {
+ text-align: center;
+}
+
+table,td,th {
+    border: 1px solid black;
+    margin: auto;
+    width:75%;
+    text-align:center;
+}
