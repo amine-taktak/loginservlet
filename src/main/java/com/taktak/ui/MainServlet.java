@@ -12,6 +12,10 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import java.io.IOException;
 
+/**
+ * @author Amine Taktak
+ * @created 23.05.2020
+ */
 @WebServlet("/main")
 public class MainServlet extends HttpServlet {
 
@@ -19,7 +23,8 @@ public class MainServlet extends HttpServlet {
     private UserData userData;
 
     private static final String USERNAME = "username";
-
+    private static final String FIRSTNAME = "firstname";
+    private static final String LASTNAME = "lastname";
     private static final String MAIN_PAGE_JSP = "MainPage.jsp";
 
     @Override
@@ -30,14 +35,14 @@ public class MainServlet extends HttpServlet {
 
         if (currentUser != null) {
 
-            String username  = currentUser.getUsername();
-            request.setAttribute("username", username);
+            String username = currentUser.getUsername();
+            request.setAttribute(USERNAME, username);
 
             String firstname = currentUser.getFirstname();
-            request.setAttribute("firstname", firstname);
+            request.setAttribute(FIRSTNAME, firstname);
 
-            String lastname  = currentUser.getLastname();
-            request.setAttribute("lastname", lastname);
+            String lastname = currentUser.getLastname();
+            request.setAttribute(LASTNAME, lastname);
 
             RequestDispatcher rd = request.getRequestDispatcher(MAIN_PAGE_JSP);
             rd.forward(request, response);

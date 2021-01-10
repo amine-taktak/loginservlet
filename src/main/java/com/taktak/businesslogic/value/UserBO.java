@@ -1,5 +1,9 @@
 package com.taktak.businesslogic.value;
 
+/**
+ * @author Amine Taktak
+ * @created 23.05.2020
+ */
 public class UserBO {
 
     private String firstname;

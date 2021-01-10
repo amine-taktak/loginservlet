@@ -6,6 +6,10 @@ import com.taktak.persistence.facade.UserFacade;
 import javax.inject.Inject;
 import java.util.List;
 
+/**
+ * @author Amine Taktak
+ * @created 23.05.2020
+ */
 public class LoginChecker {
 
     @Inject

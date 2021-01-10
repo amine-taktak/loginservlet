@@ -7,6 +7,10 @@ import com.taktak.persistence.facade.UserFacade;
 
 import javax.inject.Inject;
 
+/**
+ * @author Amine Taktak
+ * @created 23.05.2020
+ */
 public class UserData {
 
     @Inject

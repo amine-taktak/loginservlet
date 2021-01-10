@@ -7,6 +7,10 @@ import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
 import java.util.List;
 
+/**
+ * @author Amine Taktak
+ * @created 21.05.2020
+ */
 public class UserFacade {
 
     @PersistenceContext

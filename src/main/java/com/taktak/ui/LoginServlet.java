@@ -13,6 +13,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+/**
+ * @author Amine Taktak
+ * @created 23.05.2020
+ */
 @WebServlet("/login")
 public class LoginServlet extends HttpServlet {
 

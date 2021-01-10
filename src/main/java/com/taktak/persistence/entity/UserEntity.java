@@ -3,6 +3,10 @@ package com.taktak.persistence.entity;
 import javax.persistence.*;
 import java.io.Serializable;
 
+/**
+ * @author Amine Taktak
+ * @created 21.05.2020
+ */
 @Entity
 @Table(name = "user")
 public class UserEntity implements Serializable {
