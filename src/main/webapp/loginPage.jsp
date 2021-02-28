@@ -19,12 +19,12 @@
             %>
          </div>
         <div>
-            <label class="label" for="uname">Username</label>
-            <input type="text" placeholder="Enter Username" name="username"/>
+            <label for="uname" class="label">Username</label>
+            <input id ="uname" type="text" name="username" placeholder="Enter Username"/>
         </div>
         <div>
-            <label class="label" for="pwd">Password</label>
-            <input type="text" placeholder="Enter Password" name="password"/>
+            <label for="pwd" class="label">Password</label>
+            <input id="pwd" type="text" name="password" placeholder="Enter Password"/>
         </div>
         <div class="submit" id="submit">
           <input type="submit" value="login"/>
