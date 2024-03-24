@@ -47,7 +47,7 @@ public class LoginServlet extends HttpServlet {
         ServletContext servletContext = request.getSession().getServletContext();
 
         if (result) {
-            RequestDispatcher rd = servletContext.getRequestDispatcher("/main");
+            RequestDispatcher rd = servletContext.getRequestDispatcher("/home");
             rd.forward(request, response);
 
         } else {

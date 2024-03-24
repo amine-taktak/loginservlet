@@ -34,9 +34,10 @@ input{
      border: 1px solid #ee3edb;
      width:190px;
      margin: 5px 1px 5px 1px;
-     text-align:center;
+     padding: 5px 3px 5px 3px;
      border-radius: 10px;
 }
+
 div.error {
     font-family: sans-serif;
     font-size:15px;
@@ -49,6 +50,7 @@ div.submit {
     border: none;
     text-align: center;
 }
+
 input[type=submit] {
          font-family: sans-serif;
          font-size: 15px;
