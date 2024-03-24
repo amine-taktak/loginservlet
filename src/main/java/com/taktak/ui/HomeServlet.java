@@ -16,8 +16,8 @@ import java.io.IOException;
  * @author Amine Taktak
  * @created 23.05.2020
  */
-@WebServlet("/main")
-public class MainServlet extends HttpServlet {
+@WebServlet("/home")
+public class HomeServlet extends HttpServlet {
 
     @Inject
     private UserData userData;
