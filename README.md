@@ -19,4 +19,4 @@ Application Server.
  1. Clone this repository and build the examples using:
      `mvn package`
  2. From the folder loginservlet run
-     `mvn wildfly:run -DskipTests`
+     `mvn wildfly:run`
