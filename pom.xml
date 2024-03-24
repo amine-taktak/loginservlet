@@ -8,6 +8,7 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
     <name>LoginServlet Project</name>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>org.jboss.spec.javax.servlet</groupId>

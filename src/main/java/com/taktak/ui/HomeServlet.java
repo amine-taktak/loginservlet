@@ -18,14 +18,13 @@ import java.io.IOException;
  */
 @WebServlet("/home")
 public class HomeServlet extends HttpServlet {
-
     @Inject
     private UserData userData;
 
     private static final String USERNAME = "username";
     private static final String FIRSTNAME = "firstname";
     private static final String LASTNAME = "lastname";
-    private static final String MAIN_PAGE_JSP = "MainPage.jsp";
+    private static final String HOME_PAGE_JSP = "HomePage.jsp";
 
     @Override
     public void service(ServletRequest request, ServletResponse response) throws IOException, ServletException {
@@ -44,7 +43,7 @@ public class HomeServlet extends HttpServlet {
             String lastname = currentUser.getLastname();
             request.setAttribute(LASTNAME, lastname);
 
-            RequestDispatcher rd = request.getRequestDispatcher(MAIN_PAGE_JSP);
+            RequestDispatcher rd = request.getRequestDispatcher(HOME_PAGE_JSP);
             rd.forward(request, response);
         }
     }
