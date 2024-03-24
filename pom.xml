@@ -8,53 +8,55 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
     <name>LoginServlet Project</name>
+
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
+
     <dependencies>
-        <dependency>
-            <groupId>org.jboss.spec.javax.servlet</groupId>
-            <artifactId>jboss-servlet-api_2.5_spec</artifactId>
-            <version>1.0.1.Final</version>
-        </dependency>
-        <dependency>
-            <groupId>javax.inject</groupId>
-            <artifactId>javax.inject</artifactId>
-            <version>1</version>
-        </dependency>
+        <!-- Java EE 8 API Specification (Sep 06, 2017) -->
+        <!-- https://mvnrepository.com/artifact/javax/javaee-api/8.0 -->
         <dependency>
             <groupId>javax</groupId>
             <artifactId>javaee-api</artifactId>
             <version>8.0</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager -->
+
+        <!-- JBoss Java EE 6 Specification API (Apr 30, 2012) -->
+        <!-- https://mvnrepository.com/artifact/org.jboss.spec.javax.servlet/jboss-servlet-api_2.5_spec/1.0.1.Final -->
         <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-entitymanager</artifactId>
-            <version>3.5.0-Final</version>
+            <groupId>org.jboss.spec.javax.servlet</groupId>
+            <artifactId>jboss-servlet-api_2.5_spec</artifactId>
+            <version>1.0.1.Final</version>
             <scope>provided</scope>
         </dependency>
 
+        <!-- JBoss Java EE 6 Specification (Dec 11, 2014) -->
+        <!-- https://mvnrepository.com/artifact/org.jboss.spec/jboss-javaee-6.0/3.0.3.Final -->
+        <dependency>
+            <groupId>org.jboss.spec</groupId>
+            <artifactId>jboss-javaee-6.0</artifactId>
+            <version>3.0.3.Final</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
+
+        <!-- Java Dependency Injection API (Oct 13, 2009) -->
+        <dependency>
+            <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
+            <version>1</version>
+        </dependency>
+
+        <!-- Hibernate EntityManager (Apr 15, 2015) -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>4.3.9.Final</version>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
-    <dependencyManagement>
-        <dependencies>
-
-            <dependency>
-                <groupId>org.jboss.spec</groupId>
-                <artifactId>jboss-javaee-6.0</artifactId>
-                <version>3.0.3.Final</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-
-            <!-- Java EE 6 API Specificaton -->
-            <dependency>
-                <groupId>javax</groupId>
-                <artifactId>javaee-api</artifactId>
-                <version>6.0</version>
-                <scope>provided</scope>
-            </dependency>
-
-        </dependencies>
-    </dependencyManagement>
 
     <build>
         <plugins>
@@ -73,7 +75,7 @@
                 <artifactId>wildfly-maven-plugin</artifactId>
                 <version>2.0.0.Final</version>
                 <configuration>
-                    <timeout>120</timeout>
+                    <timeout>240</timeout>
                 </configuration>
             </plugin>
         </plugins>
